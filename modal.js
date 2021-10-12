@@ -14,5 +14,8 @@ const Modal = ()=>{
     
     return()=> modalRoot.removeChild(elRef.current)
   },[])
+  
+  return createPortal(<div>{children}</div>, elRef.current)
 }
  
+export default Modal
